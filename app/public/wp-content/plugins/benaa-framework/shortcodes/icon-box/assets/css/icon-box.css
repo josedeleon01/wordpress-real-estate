@@ -1,0 +1,90 @@
+.g5plus-icon-box .icon-wrap {
+  width: 82px;
+  height: 82px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.g5plus-icon-box .icon-wrap a {
+  display: block;
+}
+.g5plus-icon-box .icon-wrap i {
+  font-size: 38px;
+  line-height: 78px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-left: 2px;
+}
+.g5plus-icon-box h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.g5plus-icon-box p {
+  font-size: 13px;
+  line-height: 21px;
+}
+.g5plus-icon-box.layout-left .icon-wrap {
+  float: left;
+  margin-right: 24px;
+}
+.g5plus-icon-box.layout-left .info-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.g5plus-icon-box.layout-right .icon-wrap {
+  float: right;
+  margin-left: 24px;
+}
+.g5plus-icon-box.layout-right .info-wrap {
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+}
+.g5plus-icon-box.layout-center {
+  text-align: center;
+}
+.g5plus-icon-box.layout-center .icon-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.g5plus-icon-box.shape-circle .icon-wrap i {
+  color: #fff;
+}
+.g5plus-icon-box.shape-circle:hover .icon-wrap {
+  background: #fff;
+}
+.g5plus-icon-box.shape-bg-white-outline-circle .icon-wrap {
+  background: #fff;
+}
+.g5plus-icon-box.shape-bg-white-outline-circle:hover .icon-wrap i {
+  color: #fff;
+}
+.g5plus-icon-box.shape-outline-circle:hover .icon-wrap {
+  background-color: #fff;
+}
+.g5plus-icon-box.shape-outline-circle.color-dark:hover .icon-wrap i {
+  color: #fff;
+}
+.g5plus-icon-box.color-light h6,
+.g5plus-icon-box.color-light p,
+.g5plus-icon-box.color-light h6 a,
+.g5plus-icon-box.color-light .icon-wrap i {
+  color: #fff;
+}
+.g5plus-icon-box.color-light .icon-wrap {
+  border-color: #fff;
+}
+.g5plus-icon-box + .g5plus-icon-box {
+  margin-top: 32px;
+}

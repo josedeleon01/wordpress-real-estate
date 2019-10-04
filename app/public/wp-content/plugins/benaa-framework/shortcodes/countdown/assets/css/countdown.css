@@ -1,0 +1,42 @@
+.g5plus-countdown {
+  text-align: center;
+}
+.g5plus-countdown .countdown-section {
+  display: inline-block;
+  margin-right: 25px;
+  position: relative;
+}
+.g5plus-countdown .countdown-section:last-child {
+  margin-right: 0;
+}
+.g5plus-countdown .countdown-period {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 53px;
+  left: 0;
+  right: 0;
+}
+.g5plus-countdown input {
+  z-index: 1;
+  font-weight: 500 !important;
+  font-size: 82px !important;
+  top: -13px;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .g5plus-countdown .countdown-section:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .g5plus-countdown .countdown-section:nth-child(2) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .g5plus-countdown .countdown-section {
+    margin-right: 0;
+  }
+}

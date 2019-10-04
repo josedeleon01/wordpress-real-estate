@@ -1,0 +1,670 @@
+.benaa-class {
+	//Account
+	.wp-social-login-widget {
+		padding-bottom: 40px;
+		.wp-social-login-connect-with {
+			color: #bababa;
+		}
+		.wp-social-login-provider-list {
+			padding: 0;
+		}
+	}
+	.modal-login .modal-content {
+		padding: 0;
+		.box-shadow(none);
+		.border-radius(0);
+		button.close {
+			display: none;
+		}
+		.nav-tabs > li {
+			width: 50%;
+			text-align: center;
+			&.active, &:hover, &:focus {
+				> a {
+					color: #fff;
+					background-color: @accent_color;
+				}
+			}
+			> a {
+				.border-radius(0);
+				border: none;
+				border-bottom: solid 1px transparent;
+				font-weight: 600;
+				font-size: 18px;
+				text-transform: uppercase;
+				color: @heading_color;
+				padding: 22px 15px;
+				background-color: #f5f5f5;
+				margin-right: 0;
+			}
+		}
+	}
+	.ere-login-wrap .form-group input:not([type=checkbox]), .ere-login-wrap .form-group select.form-control, .ere-register-wrap .form-group input:not([type=checkbox]), .ere-register-wrap .form-group select.form-control, .ere-reset-password-wrap .form-group input:not([type=checkbox]), .ere-reset-password-wrap .form-group select.form-control {
+		border: solid 1px @border_color;
+		height: 52px;
+		.border-radius(26px);
+		margin-bottom: 17px;
+		padding: 0 40px;
+		background-color: #fff;
+	}
+	.ere-login-wrap .form-group input:not([type=checkbox]):focus, .ere-login-wrap .form-group input:not([type=checkbox]):hover, .ere-login-wrap .form-group select.form-control:focus, .ere-login-wrap .form-group select.form-control:hover, .ere-register-wrap .form-group input:not([type=checkbox]):focus, .ere-register-wrap .form-group input:not([type=checkbox]):hover, .ere-register-wrap .form-group select.form-control:focus, .ere-register-wrap .form-group select.form-control:hover, .ere-reset-password-wrap .form-group input:not([type=checkbox]):focus, .ere-reset-password-wrap .form-group input:not([type=checkbox]):hover, .ere-reset-password-wrap .form-group select.form-control:focus, .ere-reset-password-wrap .form-group select.form-control:hover {
+		border-color: @accent_color;
+	}
+	.ere-login-wrap .form-group:after, .ere-register-wrap .form-group:after {
+		font-size: 16px;
+		color: #c5c5c5;
+		line-height: 52px;
+		left: 6px;
+		right: auto;
+	}
+	.ere-login-wrap button, .ere-register-wrap button, .ere-reset-password-wrap button {
+		height: 48px;
+		.border-radius(24px);
+		background-color: @accent_color;
+		border-color: @accent_color;
+		&:hover {
+			border-color: @heading_color;
+			background-color: @heading_color !important;
+			color: #fff;
+		}
+	}
+	.ere-login-wrap .checkbox:hover, .ere-login-wrap .ere-reset-password:hover {
+		color: @accent_color;
+	}
+	.ere-update-profile, .ere-change-password {
+		input {
+			.border-radius(22px);
+			padding: 0 23px;
+		}
+		textarea {
+			.border-radius(22px);
+			padding: 8px 23px;
+		}
+	}
+	.ere-my-properties-search, .ere-dashboard-content {
+		select, input {
+			.border-radius(22px);
+			padding: 0 23px;
+		}
+		.btn {
+			padding: 11px 23px !important;
+			.border-radius(22px);
+			background-color: transparent;
+			color: @accent_color;
+			&:hover, &:focus {
+				background-color: @accent_color;
+				color: #fff;
+				border-color: @accent_color;
+			}
+		}
+	}
+	.ere-reset-password {
+		text-decoration: underline;
+	}
+	.ere_widget_login_menu {
+		.login-link, .user-display-name {
+			i {
+				font-family: icomoon;
+				&:before {
+					content: "\e971";
+				}
+			}
+			
+		}
+	}
+	.ere-user-dashboard {
+		// My Profile
+		.ere-dashboard-welcome {
+			border: none;
+			padding: 0;
+			text-align: initial;
+			figure {
+				width: initial;
+				height: initial;
+				overflow: initial;
+				.border-radius(0);
+				border: none;
+				background-color: #4c4c4c;
+				img {
+					.border-radius(0);
+				}
+			}
+			h4.ere-dashboard-title {
+				font-size: 18px;
+				margin: 0;
+				margin-bottom: 35px;
+			}
+			a.ere-dashboard-logout {
+				border: solid 2px @accent_color;
+				display: block;
+				text-align: center;
+				font-size: 14px;
+				line-height: 18px;
+				padding: 11px 19px;
+				.border-radius(22px);
+				color: @accent_color;
+				text-transform: uppercase;
+				.transition03;
+				i {
+					display: none;
+				}
+				&:hover {
+					background-color: @accent_color;
+					color: #fff;
+				}
+			}
+			.ere-dashboard-user-info {
+				background-color: #fff;
+				padding: 24px 20px 15px;
+				.box-shadow(0 12px 16px 0 rgba(0, 0, 0, 0.02));
+			}
+		}
+		.navbar-default {
+			border: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			background: #fff;
+			.box-shadow(0 12px 16px 0 rgba(0, 0, 0, 0.02));
+			.navbar-nav > li {
+				border-color: @border_color;
+				> a {
+					color: @text_color;
+					font-weight: 500;
+					font-size: 14px;
+					padding-left: 0;
+					padding-right: 0;
+					.transition03;
+				}
+			}
+			
+			.ere-dashboard-nav li.active a, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
+				border: none;
+				margin-left: 0;
+				background-color: transparent;
+				color: @accent_color;
+			}
+		}
+		.panel-default {
+			border: none;
+			> .panel-heading {
+				background-color: #000;
+				color: #fff;
+				font-weight: 600;
+				text-transform: capitalize;
+				font-size: 18px;
+				.border-radius(0);
+				padding: 16.5px 30px;
+			}
+			.list-group.ere-my-package {
+				padding-left: 20px !important;
+				padding-right: 20px;
+				.box-shadow(0 12px 16px 0 rgba(0, 0, 0, 0.02));
+				> li {
+					border-bottom: 1px solid @border_color !important;
+					padding: 13px 20px;
+					margin-bottom: 0;
+					padding-left: 0;
+					padding-right: 0;
+					color: @text_color;
+					font-weight: 500;
+					font-size: 14px;
+					width: 100%;
+					&:last-child {
+						margin-top: -1px;
+						border-bottom: none !important;
+					}
+					> a.btn {
+						margin-top: 7px;
+						.border-radius(22px);
+						background-color: transparent;
+						color: @accent_color;
+						&:hover, &:focus {
+							background-color: @accent_color;
+							border-color: @accent_color;
+							color: #fff;
+						}
+					}
+				}
+			}
+			.panel-body {
+				padding: 30px;
+			}
+		}
+		.ere-dashboard-content {
+			//My Properties
+			.ere-post-container {
+				border: none;
+				margin-bottom: 30px;
+				padding: 15px;
+				.box-shadow(0 0 16px 4px rgba(0, 0, 0, 0.02));
+				position: relative;
+				display: flex;
+				display: -webkit-flex;
+				justify-content: flex-start;
+				-webkit-justify-content: flex-start;
+			}
+			.ere-post-thumb {
+				padding: 0;
+				min-width: 340px;
+				> span {
+					
+					font-size: 12px;
+					font-weight: 500;
+					text-transform: uppercase;
+					padding-left: 17px;
+					padding-right: 17px;
+					&.ere-property-status {
+						top: 15px;
+						.border-bottom-right-radius(10px);
+						.border-top-right-radius(10px);
+					}
+					&.ere-property-featured {
+						bottom: auto;
+						top: 15px;
+						.border-bottom-left-radius(10px);
+						.border-top-left-radius(10px);
+					}
+				}
+			}
+			h4.ere-post-title {
+				font-weight: 600;
+				font-size: 21px;
+				margin-top: 2px;
+				margin-bottom: 6px;
+				a {
+					color: @heading_color;
+				}
+			}
+			.ere-post-content {
+				padding: 0;
+				margin-left: 15px;
+				position: relative;
+				width: 100%;
+			}
+			.ere-my-property-address {
+				font-size: 12px;
+				margin-bottom: 12px;
+				i {
+					display: none;
+				}
+			}
+			.ere-my-property-total-views, .ere-my-property-date, .property-info-inner > div {
+				font-size: 12px;
+				display: inline-block;
+				width: 50%;
+				float: left;
+				margin-bottom: 5px;
+				i {
+					font-size: 16px;
+					color: @accent_color;
+					margin-right: 6px;
+					width: 16px;
+					display: inline-block;
+				}
+			}
+			.property-type {
+				font-size: 12px;
+				font-weight: 600;
+				text-transform: uppercase;
+				> a {
+					color: @accent_color;
+					+ a:before {
+						content: ",";
+						display: inline-block;
+						margin-right: 5px;
+						margin-left: -2px;
+					}
+				}
+			}
+			.property-status-price {
+				display: table;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				> div {
+					display: table-cell;
+					vertical-align: middle;
+				}
+				.property-status {
+					background-color: @accent_color;
+					position: relative;
+					right: auto;
+					top: auto;
+					p {
+						margin-bottom: 0;
+						color: #fff;
+						font-weight: 500;
+						text-transform: uppercase;
+						display: inline-block;
+						.property-status-bg {
+							background-color: transparent;
+							font-size: 12px;
+							line-height: 40px;
+							padding-left: 20px;
+							padding-right: 10px;
+							.property-arrow {
+								display: none;
+							}
+						}
+					}
+					&:after {
+						content: '';
+						display: block;
+						width: 0;
+						height: 0;
+						border-top: 40px solid @accent_color;
+						border-right: 20px solid transparent;
+						position: absolute;
+						top: 0;
+						left: 100%;
+					}
+				}
+				.property-price {
+					background-color: @heading_color;
+					font-size: 16px;
+					font-weight: 600;
+					color: #fff;
+					text-align: right;
+					padding-right: 20px;
+					white-space: nowrap;
+					.property-price-prefix, .property-price-postfix {
+						font-weight: 600;
+						font-size: 10px;
+						color: #aeaeae;
+						line-height: 19px;
+						text-transform: uppercase;
+						position: relative;
+						top: -4px;
+					}
+				}
+			}
+			ul.ere-dashboard-actions {
+				background-color: @heading_color;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				margin-top: 0;
+				width: 100%;
+				display: flex;
+				display: -webkit-flex;
+				justify-content: space-evenly;
+				-webkit-justify-content: space-evenly;
+				align-items: center;
+				a.btn-action {
+					font-size: 14px;
+					color: @disable_color;
+					border: none;
+					background: transparent;
+					margin: 0;
+					padding-top: 8.5px;
+					padding-bottom: 8.5px;
+					.transition03;
+					&:hover {
+						color: #fff;
+					}
+					&.ere-dashboard-action-edit, &.ere-dashboard-action-allow_edit {
+						&:before {
+							content: "\f040";
+							display: inline-block;
+							font-size: 14px;
+							color: @accent_color;
+							width: 15px;
+							font-family: FontAwesome;
+						}
+					}
+					&.ere-dashboard-action-delete:before {
+						content: "\f1f8";
+						display: inline-block;
+						font-size: 15px;
+						color: @accent_color;
+						width: 15px;
+						font-family: FontAwesome;
+					}
+					&.ere-dashboard-action-hidden:before {
+						content: "\f070";
+						display: inline-block;
+						font-size: 15px;
+						color: @accent_color;
+						width: 18px;
+						font-family: FontAwesome;
+					}
+				}
+			}
+			//My Favorites
+			.ere-property.property-list {
+				.ere-item-wrap {
+					.box-shadow(0 0 16px 4px rgba(0, 0, 0, 0.02));
+				}
+				.property-status-price {
+					position: initial;
+					margin-top: 75px !important;
+				}
+				.paging-navigation {
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
+	.ere-property-multi-step {
+		.ere-heading-style2 {
+			margin-bottom: 0 !important;
+			h2 {
+				font-weight: 600;
+				color: #fff;
+				font-size: 18px;
+				background: @heading_color;
+				padding: 23px 30px;
+				margin: 0;
+				&:after {
+					display: none;
+				}
+			}
+		}
+		.add-tab-row h4 {
+			font-weight: 600;
+			color: #fff;
+			font-size: 18px;
+			background: @heading_color;
+			padding: 23px 30px;
+			margin-bottom: 0;
+			margin-top: 50px;
+		}
+		.ere-step-nav button, .ere-step-nav input[type=submit] {
+			-webkit-border-radius: 22px;
+			-moz-border-radius: 22px;
+			border-radius: 22px;
+			background-color: transparent;
+			color: @accent_color;
+			&:hover, &:focus {
+				border-color: @accent_color;
+				background-color: @accent_color;
+				color: #ffff;
+			}
+		}
+		#ere_select_file_attachments, #ere_select_gallery_images, .add-additional-feature, input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block, .ere-payment-for a.btn.btn-default, #ere_payment_package {
+			-webkit-border-radius: 22px;
+			-moz-border-radius: 22px;
+			border-radius: 22px;
+			background-color: transparent;
+			color: @accent_color;
+			&:hover, &:focus {
+				border-color: @accent_color;
+				background-color: @accent_color;
+				color: #ffff;
+			}
+		}
+		.property-manager-form label {
+			font-weight: 500;
+		}
+		.checkbox input[type=checkbox] {
+			width: 14px;
+			height: 14px;
+		}
+		.property-fields {
+			&.property-title-des {
+				.form-group {
+					padding: 30px;
+					background: #fff;
+				}
+				.property-fields-title {
+					margin: -30px -30px 0 -30px;
+				}
+				#property_title {
+					margin-top: 30px;
+					-webkit-border-radius: 22px;
+					-moz-border-radius: 22px;
+					border-radius: 22px;
+				}
+			}
+			&.property-location, &.property-type, &.property-price, &.property-feature, &.property-detail, &.property-media > div.row {
+				background-color: #fff;
+				padding: 30px 15px;
+				margin-left: 0;
+				margin-right: 0;
+				input, select, textarea {
+					-webkit-border-radius: 22px;
+					-moz-border-radius: 22px;
+					border-radius: 22px;
+				}
+			}
+			.property-floors-control {
+				background-color: #fff;
+				padding: 30px;
+				input, select {
+					-webkit-border-radius: 22px;
+					-moz-border-radius: 22px;
+					border-radius: 22px;
+				}
+			}
+		}
+		.add-tab-row {
+			padding: 30px;
+			background: #fff;
+			h4 {
+				margin: -30px -30px 30px -30px;
+			}
+			.additional-block {
+				background-color: #fff;
+			}
+		}
+		.media-drag-drop {
+			background-color: #fff;
+			margin-bottom: 50px !important;
+		}
+		#ere_additional_details input.form-control {
+			-webkit-border-radius: 22px;
+			-moz-border-radius: 22px;
+			border-radius: 22px;
+		}
+		.ere-steps {
+			overflow: hidden;
+			padding-top: 55px;
+			display: flex;
+			display: -webkit-flex;
+			justify-content: space-between;
+			-webkit-justify-content: space-between;
+			.ere-btn-arrow {
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: 600;
+				color: #cacaca;
+				background-color: transparent;
+				letter-spacing: 0.1em;
+				padding: 0;
+				&.active {
+					color: @accent_color;
+					&:after {
+						background-color: @accent_color;
+						.box-shadow-rgba(0 0 0 7px, @accent_color, 0.3)
+					}
+					&:before {
+						background-color: @accent_color;
+						z-index: 1;
+					}
+				}
+				&:after {
+					display: block !important;
+					width: 30px;
+					height: 30px;
+					background-color: #d1d1d1;
+					.border-radius(50%);
+					border: none;
+					right: 50%;
+					.transform(translateX(50%));
+					top: -48px;
+					.box-shadow(0 0 0 7px rgba(221, 221, 221, 0.3));
+					z-index: 3;
+				}
+				&:before {
+					display: block !important;
+					border: none;
+					width: 1000px;
+					height: 12px;
+					background-color: #ededed;
+					top: -38px;
+					right: 50%;
+					left: auto;
+				}
+				&:first-child:before {
+					background-color: #f6f6f6;
+					z-index: 2;
+				}
+			}
+		}
+	}
+	.payment-wrap .ere-payment-for a.btn.btn-default, .payment-wrap #ere_payment_package, .ere-payment-completed-wrap a.btn.btn-primary {
+		-webkit-border-radius: 22px;
+		-moz-border-radius: 22px;
+		border-radius: 22px;
+		background-color: transparent;
+		color: @accent_color;
+		&:hover, &:focus {
+			border-color: @accent_color;
+			background-color: @accent_color;
+			color: #ffff;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.benaa-class .ere-user-dashboard .ere-dashboard-content {
+		.ere-post-container {
+			display: block;
+		}
+		.ere-post-thumb {
+			min-width: 100%;
+			margin-bottom: 15px;
+		}
+		.ere-post-content {
+			margin-left: 0;
+		}
+		.property-status-price {
+			position: initial;
+		}
+	}
+	
+	.benaa-class .ere-user-dashboard .ere-dashboard-content .ere-property.property-list .property-status-price {
+		margin-top: 0 !important;
+	}
+	
+	.benaa-class .ere-property-multi-step .ere-steps {
+		display: block;
+		.ere-btn-arrow {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media (max-width: 374px) {
+	.benaa-class .ere-user-dashboard .ere-dashboard-content .property-status-price > div {
+		display: block;
+		text-align: center !important;
+		&.property-status:after {
+			display: none;
+		}
+	}
+	
+	.benaa-class .ere-user-dashboard .ere-dashboard-content .ere-property.property-list .property-info .property-info-inner > div, .benaa-class .ere-user-dashboard .ere-dashboard-content .ere-my-property-total-views, .benaa-class .ere-user-dashboard .ere-dashboard-content .ere-my-property-date, .benaa-class .ere-user-dashboard .ere-dashboard-content .property-info-inner > div {
+		width: 100% !important;
+	}
+}

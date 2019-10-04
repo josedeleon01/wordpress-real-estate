@@ -1,0 +1,29 @@
+/*
+Theme Name:         Benaa
+Theme URI:          http://themes.g5plus.net/benaa/
+Description:        Benaa is the WordPress Theme for real estate seller, buyer, agents and agencies. It has a purpose oriented design and it comes loaded with tons of useful features
+Version:            1.2
+Author:             G5Theme
+Author URI:         http://g5plus.net/
+
+License:            GNU General Public License v2 or later
+License URI:        http://www.gnu.org/licenses/gpl-2.0.html
+
+Tags: 				two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: 		benaa
+Domain Path: 		/languages/
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Core
+ * 2.0 - Template
+ * 3.0 - Header
+ * 4.0 - Footer
+ * 5.0 - Widget
+ * 6.0 - Blog
+ * 7.0 - ShortCode
+ * 8.0 - Color
+ * ----------------------------------------------------------------------------
+ */

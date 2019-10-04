@@ -1,0 +1,60 @@
+.g5plus-testimonials {
+	.testimonial-item {
+		text-align: center;
+		img {
+			width: 100px;
+			height: 100px;
+			.border-radius(50%);
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 33px;
+		}
+		p {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 30px;
+		}
+		h6 {
+			font-size: 14px;
+			font-weight: 500;
+			display: inline-block;
+			position: relative;
+			&:before {
+				content: '';
+				display: block;
+				width: 48px;
+				height: 2px;
+				background-color: #ddd;
+				position: absolute;
+				left: -69px;
+				top: 50%;
+				.transform(translateY(-50%));
+			}
+			&:after {
+				content: '';
+				display: block;
+				width: 48px;
+				height: 2px;
+				background-color: #ddd;
+				position: absolute;
+				right: -69px;
+				top: 50%;
+				.transform(translateY(-50%));
+			}
+		}
+	}
+	&.color-light {
+		p {
+			color: #fff;
+		}
+	}
+	.owl-dots {
+		padding-top: 48px;
+		.owl-dot span {
+			width: 40px;
+			height: 6px;
+			.border-radius(0);
+			margin: 5px;
+		}
+	}
+}

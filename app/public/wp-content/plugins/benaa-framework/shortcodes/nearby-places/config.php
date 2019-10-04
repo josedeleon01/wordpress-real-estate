@@ -1,0 +1,187 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: trungpq
+ * Date: 25/05/2017
+ * Time: 10:52 AM
+ */
+return array(
+    'name' => esc_html__('Nearby Places', 'benaa-framework'),
+    'base' => 'g5plus_nearby_places',
+    'icon' => 'fa fa-map-marker',
+    'category' => GF_SHORTCODE_CATEGORY,
+    'params' => array_merge(
+        array(
+            array(
+                'type' => 'textfield',
+                'heading' => esc_html__('Latitude', 'benaa-framework'),
+                'param_name' => 'lat',
+                'value' => '',
+                'admin_label' => true,
+                'edit_field_class' => 'vc_col-sm-6 vc_column'
+            ),
+            array(
+                'type' => 'textfield',
+                'heading' => esc_html__('Longitude', 'benaa-framework'),
+                'param_name' => 'lng',
+                'value' => '',
+                'admin_label' => true,
+                'edit_field_class' => 'vc_col-sm-6 vc_column'
+            ),
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__('Rank by', 'benaa-framework'),
+                'param_name' => 'nearby_places_rank_by',
+                'value' => array(
+                    esc_html__('Prominence', 'benaa-framework') => 'default',
+                    esc_html__('Distance', 'benaa-framework') => 'distance'
+                ),
+                'edit_field_class' => 'vc_col-sm-6 vc_column',
+            ),
+            array(
+                'type' => 'textfield',
+                'heading' => esc_html__('Radius', 'benaa-framework'),
+                'param_name' => 'nearby_places_radius',
+                'value' => '5000',
+                'dependency' => array('element' => 'nearby_places_rank_by', 'value' => 'default'),
+                'edit_field_class' => 'vc_col-sm-6 vc_column',
+            ),
+            array(
+                'type' => 'dropdown',
+                'heading' => esc_html__('Near by places distance in', 'benaa-framework'),
+                'param_name' => 'nearby_places_distance_in',
+                'value' => array(
+                    esc_html__('Meter', 'benaa-framework') => 'm',
+                    esc_html__('Km', 'benaa-framework') => 'km',
+                    esc_html__('Mile', 'benaa-framework') => 'mi',
+                ),
+                'std' => 'km',
+                'edit_field_class' => 'vc_col-sm-6 vc_column',
+            ),
+            array(
+                'type' => 'textfield',
+                'heading' => esc_html__('Set Map Height', 'benaa-framework'),
+                'param_name' => 'set_map_height',
+                'value' => '475',
+                'edit_field_class' => 'vc_col-sm-6 vc_column',
+            ),
+            array(
+                'type' => 'textfield',
+                'heading' => esc_html__('API Key', 'benaa-framework'),
+                'param_name' => 'api_key',
+                'std' => 'AIzaSyAwey_47Cen4qJOjwHQ_sK1igwKPd74J18',
+            ),
+            array(
+                'type' => 'param_group',
+                'heading' => esc_html__('Nearby Places Fields', 'benaa-framework'),
+                'param_name' => 'nearby_places_fields',
+                'value' => urlencode(json_encode(array(
+                    array(
+                        'label' => esc_html__('Label Place', 'benaa-framework'),
+                        'value' => '',
+                    ),
+                ))),
+                'params' => array(
+                    array(
+                        'type' => 'dropdown',
+                        'heading' => esc_html__('Type Place', 'benaa-framework'),
+                        'param_name' => 'nearby_places_select_field_type',
+                        'admin_label' => true,
+                        'value' => array(
+                            esc_html__('Accounting', 'benaa-framework') => "accounting",
+                            esc_html__('Airport', 'benaa-framework') => "airport",
+                            esc_html__('Amusement Park', 'benaa-framework') => "amusement_park",
+                            esc_html__('Aquarium', 'benaa-framework') => "aquarium",
+                            esc_html__('Atm', 'benaa-framework') => "atm",
+                            esc_html__('Bakery', 'benaa-framework') => "bakery",
+                            esc_html__('Bank', 'benaa-framework') => "bank",
+                            esc_html__('Bar', 'benaa-framework') => "bar",
+                            esc_html__('Beauty Salon', 'benaa-framework') => "beauty_salon",
+                            esc_html__('Bicycle Store', 'benaa-framework') => "bicycle_store",
+                            esc_html__('Book Store', 'benaa-framework') => "book_store",
+                            esc_html__('Bowling Alley', 'benaa-framework') => "bowling_alley",
+                            esc_html__('Bus Station', 'benaa-framework') => "bus_station",
+                            esc_html__('Cafe', 'benaa-framework') => "cafe",
+                            esc_html__('Campground', 'benaa-framework') => "campground",
+                            esc_html__('Car Rental', 'benaa-framework') => "car_rental",
+                            esc_html__('Car Repair', 'benaa-framework') => "car_repair",
+                            esc_html__('Car Wash', 'benaa-framework') => "car_wash",
+                            esc_html__('Casino', 'benaa-framework') => "casino",
+                            esc_html__('Cemetery', 'benaa-framework') => "cemetery",
+                            esc_html__('Church', 'benaa-framework') => "church",
+                            esc_html__('City Center', 'benaa-framework') => "city_hall",
+                            esc_html__('Clothing Store', 'benaa-framework') => "clothing_store",
+                            esc_html__('Convenience Store', 'benaa-framework') => "convenience_store",
+                            esc_html__('Courthouse', 'benaa-framework') => "courthouse",
+                            esc_html__('Dentist', 'benaa-framework') => "dentist",
+                            esc_html__('Department Store', 'benaa-framework') => "department_store",
+                            esc_html__('Doctor', 'benaa-framework') => "doctor",
+                            esc_html__('Electrician', 'benaa-framework') => "electrician",
+                            esc_html__('Electronics Store', 'benaa-framework') => "electronics_store",
+                            esc_html__('Embassy', 'benaa-framework') => "embassy",
+                            esc_html__('Establishment', 'benaa-framework') => "establishment",
+                            esc_html__('Finance', 'benaa-framework') => "finance",
+                            esc_html__('Fire Station', 'benaa-framework') => "fire_station",
+                            esc_html__('Florist', 'benaa-framework') => "florist",
+                            esc_html__('Food', 'benaa-framework') => "food",
+                            esc_html__('Gas Station', 'benaa-framework') => "gas_station",
+                            esc_html__('Grocery', 'benaa-framework') => "grocery_or_supermarket",
+                            esc_html__('Gym', 'benaa-framework') => "gym",
+                            esc_html__('Hair Care', 'benaa-framework') => "hair_care",
+                            esc_html__('Hardware Store', 'benaa-framework') => "hardware_store",
+                            esc_html__('Health', 'benaa-framework') => "health",
+                            esc_html__('Home Goods Store', 'benaa-framework') => "home_goods_store",
+                            esc_html__('Hospital', 'benaa-framework') => "hospital",
+                            esc_html__('Jewelry Store', 'benaa-framework') => "jewelry_store",
+                            esc_html__('Laundry', 'benaa-framework') => "laundry",
+                            esc_html__('Lawyer', 'benaa-framework') => "lawyer",
+                            esc_html__('Library', 'benaa-framework') => "library",
+                            esc_html__('Lodging', 'benaa-framework') => "lodging",
+                            esc_html__('Movie Theater', 'benaa-framework') => "movie_theater",
+                            esc_html__('Moving Company', 'benaa-framework') => "moving_company",
+                            esc_html__('Night Club', 'benaa-framework') => "night_club",
+                            esc_html__('Park', 'benaa-framework') => "park",
+                            esc_html__('Pharmacy', 'benaa-framework') => "pharmacy",
+                            esc_html__('Place Of Worship', 'benaa-framework') => "place_of_worship",
+                            esc_html__('Plumber', 'benaa-framework') => "plumber",
+                            esc_html__('Police', 'benaa-framework') => "police",
+                            esc_html__('Post Office', 'benaa-framework') => "post_office",
+                            esc_html__('Restaurant', 'benaa-framework') => "restaurant",
+                            esc_html__('School', 'benaa-framework') => "school",
+                            esc_html__('Shopping Mall', 'benaa-framework') => "shopping_mall",
+                            esc_html__('Spa', 'benaa-framework') => "spa",
+                            esc_html__('Stadium', 'benaa-framework') => "stadium",
+                            esc_html__('Storage', 'benaa-framework') => "storage",
+                            esc_html__('Store', 'benaa-framework') => "store",
+                            esc_html__('Subway Station', 'benaa-framework') => "subway_station",
+                            esc_html__('Synagogue', 'benaa-framework') => "synagogue",
+                            esc_html__('Taxi Stand', 'benaa-framework') => "taxi_stand",
+                            esc_html__('Train Station', 'benaa-framework') => "train_station",
+                            esc_html__('Travel Agency', 'benaa-framework') => "travel_agency",
+                            esc_html__('University', 'benaa-framework') => "university",
+                            esc_html__('Veterinary Care', 'benaa-framework') => "veterinary_care",
+                            esc_html__('Zoo', 'benaa-framework') => "zoo",
+                        ),
+                        'std' => 'school'
+                    ),
+                    array(
+                        'type' => 'textfield',
+                        'heading' => esc_html__('Label Place', 'benaa-framework'),
+                        'param_name' => 'nearby_places_field_label',
+                        'value' => 'School'
+                    ),
+                    array(
+                        'type' => 'attach_image',
+                        'heading' => esc_html__('Image Icon Place:', 'benaa-framework'),
+                        'param_name' => 'nearby_places_field_icon',
+                        'value' => '',
+                        'description' => esc_html__('Choose Image Icon Place.', 'benaa-framework'),
+                    ),
+                ),
+            ),
+            gf_vc_map_add_extra_class(),
+            gf_vc_map_add_css_editor()
+        ),
+        gf_vc_map_animation()
+    )
+);
